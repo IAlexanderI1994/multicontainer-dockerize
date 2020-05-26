@@ -1,4 +1,5 @@
 sudo: required
+
 services:
   - docker
 
@@ -21,4 +22,19 @@ after_success:
   - docker push -t alexblaze1994/nginx-prod
   - docker push -t alexblaze1994/server-prod
   - docker push -t alexblaze1994/worker-prod
+
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: multicontainer
+  env: Multicontainer-env
+  bucket_name: elasticbeanstalk-us-east-2-184626414275
+  #can be any
+  bucket_path: docker-multi
+  on:
+    branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+
 
