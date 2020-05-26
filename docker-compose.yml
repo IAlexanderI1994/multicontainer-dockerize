@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: root
+      POSTGRES_PASSWORD: postgres_password
   redis:
     image: 'redis:latest'
   nginx:
@@ -30,7 +30,7 @@ services:
       - PGUSER=postgres
       - PGHOST=postgres
       - PGDATABASE=postgres
-      - PGPASSWORD=root
+      - PGPASSWORD=postgres_password
       - PGPORT=5432
   client:
     build:
