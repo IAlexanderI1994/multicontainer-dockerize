@@ -14,7 +14,7 @@
       "hostname": "api",
       "essential": false,
       "memory": 32
-    }
+    },
     {
       "name": "worker",
       "image": "alexkir1994/worker-prod",
