@@ -5,19 +5,19 @@
       "name": "client",
       "image": "alexblaze1994/client-prod",
       "hostname": "client",
-      "essential": false,
+      "essential": false
     },
     {
       "name": "server",
       "image": "alexblaze1994/server-prod",
       "hostname": "api",
-      "essential": false,
+      "essential": false
     },
     {
       "name": "worker",
       "image": "alexblaze1994/worker-prod",
       "hostname": "worker",
-      "essential": false,
+      "essential": false
     },
     {
       "name": "nginx",
@@ -33,7 +33,7 @@
       "links": [
         "client",
         "server"
-      ],
+      ]
     }
   ]
 }
