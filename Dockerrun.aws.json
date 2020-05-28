@@ -3,28 +3,28 @@
   "containerDefinitions": [
     {
       "name": "client",
-      "image": "alexblaze1994/client-prod",
+      "image": "alexkir1994/client-prod",
       "hostname": "client",
       "essential": false,
       "memory": 32
     },
     {
       "name": "server",
-      "image": "alexblaze1994/server-prod",
+      "image": "alexkir1994/server-prod",
       "hostname": "api",
       "essential": false,
       "memory": 32
     },
     {
       "name": "worker",
-      "image": "alexblaze1994/worker-prod",
+      "image": "alexkir1994/worker-prod",
       "hostname": "worker",
       "essential": false,
       "memory": 32
     },
     {
       "name": "nginx",
-      "image": "alexblaze1994/nginx-prod",
+      "image": "alexkir1994/nginx-prod",
       "hostname": "nginx",
       "essential": true,
       "portMappings": [
