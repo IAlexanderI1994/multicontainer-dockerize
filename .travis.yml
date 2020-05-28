@@ -27,7 +27,7 @@ deploy:
   provider: elasticbeanstalk
   region: us-east-2
   app: fib
-  env: Fib-env
+  env: Fib-env-1
   bucket_name: elasticbeanstalk-us-east-2-184626414275
   #can be any
   bucket_path: docker-multi
