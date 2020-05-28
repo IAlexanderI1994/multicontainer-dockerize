@@ -24,6 +24,7 @@ after_success:
   - docker push alexkir1994/worker-prod
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: us-east-2
   app: fib
