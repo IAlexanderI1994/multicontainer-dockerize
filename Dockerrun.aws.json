@@ -37,7 +37,7 @@
         "client",
         "server"
       ],
-      "memory": 64
+      "memory": 128
     }
   ]
 }
