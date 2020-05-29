@@ -6,21 +6,21 @@
       "image": "alexkir1994/client-prod",
       "hostname": "client",
       "essential": false,
-      "memory": 32
+      "memory": 64
     },
     {
       "name": "server",
       "image": "alexkir1994/server-prod",
       "hostname": "api",
       "essential": false,
-      "memory": 32
+      "memory": 64
     },
     {
       "name": "worker",
       "image": "alexkir1994/worker-prod",
       "hostname": "worker",
       "essential": false,
-      "memory": 32
+      "memory": 64
     },
     {
       "name": "nginx",
@@ -37,7 +37,7 @@
         "client",
         "server"
       ],
-      "memory": 32
+      "memory": 64
     }
   ]
 }
