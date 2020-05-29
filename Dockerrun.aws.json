@@ -19,7 +19,7 @@
       "name": "worker",
       "image": "alexkir1994/worker-prod",
       "hostname": "worker",
-      "essential": true,
+      "essential": false,
       "memory": 32
     },
     {
